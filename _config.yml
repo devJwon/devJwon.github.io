@@ -46,7 +46,7 @@ footer:
       url: "https://github.com/devJwon"
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "default"
 plugins:
   - jekyll-feed
@@ -54,6 +54,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 # Defaults
 defaults:
