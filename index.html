@@ -12,145 +12,189 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-        }
-
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: #ffffff;
+            font-size: 16px;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
+        }
+
+        header {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 4rem 0 2rem;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
+            font-weight: 700;
             margin-bottom: 0.5rem;
+            color: #000;
+            letter-spacing: -0.02em;
         }
 
         .subtitle {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: 1rem;
+            color: #666;
+            font-weight: 400;
         }
 
         nav {
-            background: white;
-            padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            padding: 2rem 0;
+            border-bottom: 1px solid #e0e0e0;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         nav a {
             text-decoration: none;
-            color: #667eea;
+            color: #1a1a1a;
+            font-size: 0.95rem;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: color 0.2s;
         }
 
         nav a:hover {
-            color: #764ba2;
+            color: #666;
         }
 
         main {
             padding: 3rem 0;
+            min-height: 60vh;
+        }
+
+        .about-section {
+            padding: 2rem 0;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .about-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .about-section p {
+            color: #4a4a4a;
+            line-height: 1.8;
+        }
+
+        .posts-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .posts-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000;
         }
 
         .post-grid {
             display: grid;
-            gap: 2rem;
-            margin-top: 2rem;
+            gap: 3rem;
         }
 
         .post-card {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid #f0f0f0;
         }
 
-        .post-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        .post-card:last-child {
+            border-bottom: none;
         }
 
         .post-date {
             color: #999;
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.02em;
         }
 
         .post-title {
-            font-size: 1.8rem;
-            color: #333;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000;
             margin-bottom: 1rem;
+            line-height: 1.4;
         }
 
         .post-excerpt {
-            color: #666;
+            color: #4a4a4a;
             line-height: 1.8;
+            margin-bottom: 1rem;
         }
 
         .read-more {
             display: inline-block;
-            margin-top: 1rem;
-            color: #667eea;
+            color: #1a1a1a;
             text-decoration: none;
+            font-size: 0.9rem;
             font-weight: 500;
+            border-bottom: 1px solid #1a1a1a;
+            padding-bottom: 2px;
+            transition: opacity 0.2s;
         }
 
         .read-more:hover {
-            text-decoration: underline;
+            opacity: 0.6;
         }
 
         footer {
-            background: #333;
-            color: white;
+            border-top: 1px solid #e0e0e0;
+            padding: 3rem 0;
+            margin-top: 5rem;
+        }
+
+        footer p {
+            color: #666;
+            font-size: 0.875rem;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
         }
 
-        .about-section {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 3rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-
-        .about-section h2 {
-            color: #667eea;
-            margin-bottom: 1rem;
+        footer .emoji {
+            color: #999;
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
+            header {
+                padding: 3rem 0 1.5rem;
             }
-            
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            nav {
+                padding: 1.5rem 0;
+            }
+
             nav ul {
                 gap: 1rem;
             }
-            
+
+            main {
+                padding: 2rem 0;
+            }
+
             .post-title {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
+            }
+
+            .post-grid {
+                gap: 2rem;
             }
         }
     </style>
@@ -176,12 +220,14 @@
 
     <main class="container">
         <section class="about-section" id="about">
-            <h2>안녕하세요! 👋</h2>
+            <h2>안녕하세요</h2>
             <p>개발을 공부하며 배운 것들을 기록하는 공간입니다. 프로그래밍, 새로운 기술, 그리고 개발 과정에서의 경험들을 공유합니다.</p>
         </section>
 
         <section id="posts">
-            <h2 style="margin-bottom: 1rem; color: #333;">최근 포스트</h2>
+            <div class="posts-header">
+                <h2>최근 포스트</h2>
+            </div>
             
             <div class="post-grid">
                 <article class="post-card">
@@ -219,8 +265,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 devJwon's Blog. All rights reserved.</p>
-            <p style="margin-top: 0.5rem; opacity: 0.8;">Made with ❤️ and HTML</p>
+            <p>&copy; 2025 devJwon's Blog</p>
+            <p style="margin-top: 0.5rem;" class="emoji">Made with HTML</p>
         </div>
     </footer>
 </body>
